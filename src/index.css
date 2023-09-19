@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav {
+    padding: 1.5em;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+}
+
+.navlink {
+    color: white;
+    text-decoration: none;
+    margin: 0 2em;
+}
