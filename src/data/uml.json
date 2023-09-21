@@ -1,0 +1,12 @@
+[
+    {
+    "name": "Diagramme de classe",
+    "description": "Représente la structure des classes, des attributs, des opérations et des relations entre les classes.",
+    "elements": [
+        "classes",
+        "attributes",
+        "operations",
+        "relations"
+        ]
+    }
+]
