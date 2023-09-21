@@ -4,11 +4,13 @@ import Home from './pages/Home';
 import NotFound from './pages/NotFound';
 import Uml from './pages/Uml';
 import Merise from './pages/Merise';
+import Banner from './component/Banner';
 
 function App() {
   return (
     <>
     <Navbar />
+    <Banner />
     <Routes>
       <Route path='*' element={<NotFound />} />
       <Route path='/' element={<Home/>} />
