@@ -11,26 +11,9 @@ body {
     overflow-x: hidden;
 }
 
-/* Navbar */
-
-
-.navlink {
-    color: #dcf3ff;
-    text-decoration: none;
-    margin: 2em 2em;
+.container>* {
+    padding: 0 10em;
 }
-
-.navlink:hover {
-    text-decoration: underline;
-}
-
-.active {
-    font-weight: bold;
-}
-
-/* Fin Navbar */
-
-.container {}
 
 /* Bannière */
 

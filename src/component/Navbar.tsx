@@ -1,38 +1,47 @@
-import { useState } from "react"
-import { NavLink } from "react-router-dom"
-import styled from "styled-components"
+import { useState } from "react";
+import { NavLink } from "react-router-dom";
+import { FiAlignLeft, FiX } from "react-icons/fi";
+import { FcHome, FcParallelTasks, FcServices } from "react-icons/fc";
+import styled from "styled-components";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
     <>
-    <CollapseButton toggle={isOpen} onClick={() => setIsOpen(!isOpen)}>Btn</CollapseButton>
+    <CollapseButton toggle={isOpen} onClick={() => setIsOpen(!isOpen)}>
+      <FiAlignLeft size="3em" color="white"/>
+    </CollapseButton>
     <NavbarContent toggle={isOpen} onClick={() => setIsOpen(!isOpen)}>
       <QuitButtonContainer>
-        <QuitButton>Quit</QuitButton>
+        <QuitButton toggle={isOpen} onClick={() => setIsOpen(!isOpen)}>
+          <FiX size="2.5em" color="white"/>
+        </QuitButton>
       </QuitButtonContainer>
-        <NavLink 
+        <NavLinkStyle 
           to={'/'} 
           className={({ isActive }) =>
           isActive ? "navlink active" : "navlink"
         }>
-            Home
-        </NavLink>
-        <NavLink 
+          <FcHome size="2em" className="icon"/>
+            <p>Home</p>
+        </NavLinkStyle>
+        <NavLinkStyle 
           to={'/uml'} 
           className={({ isActive }) =>
           isActive ? "navlink active" : "navlink"
         }>
-            UML
-        </NavLink>
-        <NavLink 
+          <FcParallelTasks size="2em"  className="icon"/>
+            <p>UML</p>
+        </NavLinkStyle>
+        <NavLinkStyle 
           to={'/merise'} 
           className={({ isActive }) =>
           isActive ? "navlink active" : "navlink"
         }>
-            Merise
-        </NavLink>
+          <FcServices size="2em" className="icon"/>
+            <p>Merise</p>
+        </NavLinkStyle>
     </NavbarContent>
     </>
   )
@@ -41,7 +50,7 @@ const Navbar = () => {
 export default Navbar
 
 const NavbarContent = styled.nav`
-transform: translateX(${({ toggle }) => (toggle ? "-250px" : "0")});
+transform: translateX(${({ toggle }) => (toggle ? "-170px" : "0")});
 position: fixed;
 height: 100vh;
 width: 250px;
@@ -49,21 +58,53 @@ z-index: 2;
 display: flex;
 flex-direction: column;
 background-color: #333;
-transition: transform 0.3s ease-in-out;`
+transition: transform 0.2s ease-in-out;
+
+@media (max-width: 768px) {
+  transform: translateX(${({ toggle }) => (toggle ? "-250px" : "0")});
+}
+`
 
 const CollapseButton = styled.button`
-  background-color: ${({ toggle }) => (toggle ? "red" : "blue")};
+  visibility: ${({ toggle }) => (toggle ? "visible" : "hidden")};
+  opacity: ${({ toggle }) => (toggle ? "1" : "0")};
+  background :none;
+  border: none;
   position: absolute;
-  top: 20px;
+  top: 35px;
   left: 20px;
   z-index: 10;
+  transition: visibility 0s, opacity 0.5s ease-in;
 `;
 
 const QuitButton = styled.button`
-  positon: absolute;`
+  visibility: ${({ toggle }) => (toggle ? "hidden" : "visible")}; 
+  positon: absolute;
+  margin-top: 20px;
+  margin-right: 20px;
+  background :none;
+  border: none;
+`
 
 const QuitButtonContainer = styled.div`
   text-align: end;
   background-color: #333;
   justify-content: flex-end;
+`
+
+const NavLinkStyle = styled(NavLink)`
+color: #dcf3ff;
+text-decoration: none;
+margin: 2em 2em;
+display: flex;
+align-items: center;
+  &:hover {
+    text-decoration: underline;
+  }
+  &.active {
+    font-weight: bold;
+  }
+  .icon {
+    margin-right: 1em;
+  }
 `
