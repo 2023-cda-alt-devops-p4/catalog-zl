@@ -50,7 +50,7 @@ const Navbar = () => {
 export default Navbar
 
 const NavbarContent = styled.nav`
-transform: translateX(${({ toggle }) => (toggle ? "-170px" : "0")});
+transform: translateX(${({ toggle }) => (toggle ? "0" : "-170px")});
 position: fixed;
 height: 100vh;
 width: 250px;
@@ -61,13 +61,13 @@ background-color: #333;
 transition: transform 0.2s ease-in-out;
 
 @media (max-width: 768px) {
-  transform: translateX(${({ toggle }) => (toggle ? "-250px" : "0")});
+  transform: translateX(${({ toggle }) => (toggle ? "0" : "-250px")});
 }
 `
 
 const CollapseButton = styled.button`
-  visibility: ${({ toggle }) => (toggle ? "visible" : "hidden")};
-  opacity: ${({ toggle }) => (toggle ? "1" : "0")};
+  visibility: ${({ toggle }) => (toggle ? "hidden" : "visible")};
+  opacity: ${({ toggle }) => (toggle ? "0" : "1")};
   background :none;
   border: none;
   position: absolute;
@@ -78,7 +78,7 @@ const CollapseButton = styled.button`
 `;
 
 const QuitButton = styled.button`
-  visibility: ${({ toggle }) => (toggle ? "hidden" : "visible")}; 
+  visibility: ${({ toggle }) => (toggle ? "visible" : "hidden")}; 
   positon: absolute;
   margin-top: 20px;
   margin-right: 20px;
