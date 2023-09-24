@@ -1,22 +1,70 @@
-[
+{
+    "category":[
     {
-    "name": "Diagramme de classe",
-    "description": "Représente la structure des classes, des attributs, des opérations et des relations entre les classes.",
-    "elements": [
-        "classes",
-        "attributes",
-        "operations",
-        "relations"
+        "nom": "Diagrammes de structure",
+        "diagrammes": [
+            {
+                "name": "Diagramme de classe",
+                "description": "Représente la structure des classes, des attributs, des opérations et des relations entre les classes.",
+                "elements": [
+                    "classes",
+                    "attributes",
+                    "operations",
+                    "relations"
+                ]
+            },
+            {
+                "name": "Diagramme d'objet",
+                "description": "Montre des instances spécifiques de classes et leurs relations à un moment donné.",
+                "elements": [
+                    "classes",
+                    "attributes",
+                    "operations",
+                    "relations"
+                ]
+            }
         ]
     },
     {
-    "name": "Diagramme d'objet",
-    "description": "Montre des instances spécifiques de classes et leurs relations à un moment donné.",
-    "elements": [
-        "classes",
-        "attributes",
-        "operations",
-        "relations"
+        "nom": "Diagrammes de comportement",
+        "diagrammes": [
+            {
+                "name": "Diagramme de cas d'utilisation",
+                "description": "Description diagramme de cas d'utilisation",
+                "elements": [
+                    "element 1",
+                    "element 2"
+                ]
+            },
+            {
+                "name": "Diagramme d'état-transitions",
+                "description": "Description diagramme d'état-transitions",
+                "elements": [
+                    "element 1",
+                    "element 2"
+                ]
+            }
+        ]
+    },
+    {
+        "nom": "Diagrammes d'interaction ",
+        "diagrammes": [
+            {
+                "name": "Diagramme de communication",
+                "description": "Description diagramme de communication",
+                "elements": [
+                    "element 1",
+                    "element 2"
+                ]
+            },
+            {
+                "name": "Diagramme de vue d'ensemble de collaboration",
+                "description": "Description diagramme de vue d'ensemble de collaboration",
+                "elements": [
+                    "element 1",
+                    "element 2"
+                ]
+            }
         ]
     }
-]
+]}
