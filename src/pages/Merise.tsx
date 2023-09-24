@@ -1,6 +1,8 @@
 const Merise = () => {
   return (
-    <div>Merise</div>
+    <div className="container">
+      <div>Merise</div>
+    </div>
   )
 }
 

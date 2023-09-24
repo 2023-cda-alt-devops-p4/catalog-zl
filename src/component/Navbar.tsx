@@ -93,15 +93,16 @@ const QuitButtonContainer = styled.div`
 `
 
 const NavLinkStyle = styled(NavLink)`
-color: #dcf3ff;
+color: #a1a1a1;
 text-decoration: none;
 margin: 2em 2em;
 display: flex;
 align-items: center;
   &:hover {
-    text-decoration: underline;
+    color: white;
   }
   &.active {
+    color: white;
     font-weight: bold;
   }
   .icon {

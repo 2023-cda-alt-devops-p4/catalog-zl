@@ -1,6 +1,8 @@
 const Uml = () => {
   return (
-    <div>Uml</div>
+    <div className="container">
+      <div>Uml</div>
+    </div> 
   )
 }
 
