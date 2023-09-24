@@ -11,10 +11,13 @@ body {
 }
 
 .container>* {
-    padding: 0 10em;
+    padding: 30px 80px;
 }
 
-.container {}
+.container {
+    display: flex;
+    justify-content: center;
+}
 
 /* Bannière */
 
@@ -24,7 +27,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 18vh;
-    background: radial-gradient(circle, rgba(4, 82, 128, 1) 0%, rgba(0, 25, 39, 1) 100%);
+    background: radial-gradient(circle, #394158 0%, #333 100%);
 }
 
 .banner-right {

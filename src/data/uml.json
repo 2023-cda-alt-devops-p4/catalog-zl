@@ -8,5 +8,15 @@
         "operations",
         "relations"
         ]
+    },
+    {
+    "name": "Diagramme d'objet",
+    "description": "Montre des instances spécifiques de classes et leurs relations à un moment donné.",
+    "elements": [
+        "classes",
+        "attributes",
+        "operations",
+        "relations"
+        ]
     }
 ]
