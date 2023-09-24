@@ -5,6 +5,8 @@ import NotFound from './pages/NotFound';
 import Uml from './pages/Uml';
 import Merise from './pages/Merise';
 import Banner from './component/Banner';
+import UmlCategory from './pages/UmlCategory';
+import UmlDiagram from './pages/UmlDiagram';
 
 function App() {
   return (
@@ -15,9 +17,11 @@ function App() {
       <Route path='*' element={<NotFound />} />
       <Route path='/' element={<Home/>} />
       <Route path='/uml/' element={<Uml />} />
-      <Route path='/uml/:category/:name' element={<Uml />} />
+      <Route path='/uml/:category/:name' element={<UmlDiagram />} />
+      <Route path='/uml/:category/' element={<UmlCategory />} />
       <Route path='/merise/' element={<Merise/>} />
-      <Route path='/merise/:name' element={<Merise/>} />
+      <Route path='/merise/:category/:name' element={<Merise/>} />
+      <Route path='/merise/:category/' element={<Merise/>} />
     </Routes>
     </>
   );

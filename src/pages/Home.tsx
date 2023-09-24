@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom"
 import Accordion from "../component/Accordion"
 import data from "../data/uml.json"
 
@@ -8,7 +9,7 @@ const Home = () => {
       {data.category.map((item, index) => {
         return (
           <>
-            <h2>{item.categoryName}</h2>
+            <NavLink to={`/uml/${item.categoryName}`}>{item.categoryName}</NavLink>
             <Accordion key={index} category={item.categoryName} data={item.diagrammes} />
           </>
         )
