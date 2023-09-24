@@ -1,7 +1,7 @@
 {
     "category":[
     {
-        "nom": "Diagrammes de structure",
+        "categoryName": "Diagrammes de structure",
         "diagrammes": [
             {
                 "name": "Diagramme de classe",
@@ -26,7 +26,7 @@
         ]
     },
     {
-        "nom": "Diagrammes de comportement",
+        "categoryName": "Diagrammes de comportement",
         "diagrammes": [
             {
                 "name": "Diagramme de cas d'utilisation",
@@ -47,7 +47,7 @@
         ]
     },
     {
-        "nom": "Diagrammes d'interaction ",
+        "categoryName": "Diagrammes d'interaction ",
         "diagrammes": [
             {
                 "name": "Diagramme de communication",

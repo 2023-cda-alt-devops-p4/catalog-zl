@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import styled from "styled-components";
 import { FiChevronDown, FiChevronUp  } from "react-icons/fi";
+import { NavLink } from "react-router-dom";
 
 const Accordion = ({ data }) => {
     const [toggleAccordion, setToggleAccordion] = useState(undefined);
@@ -15,7 +16,8 @@ const Accordion = ({ data }) => {
                         <span>{toggleAccordion === index ? <FiChevronUp size={"1.5em"} /> : <FiChevronDown size={"1.5em"}/>}</span>
                     </AccordionButton>
                     <AccordionContent  index={index} toggle={toggleAccordion}>
-                        <p style={{ padding: "1em" }}>{item.description}</p>
+                        <DescriptionTexte>{item.description}</DescriptionTexte>
+                        <NavLinkStyle to={`/uml/${item.name}`}>En savoir plus</NavLinkStyle>
                     </AccordionContent>
                 </AccordionContainer>
             )
@@ -50,4 +52,20 @@ const AccordionContent = styled.div`
     border-top: none;
     background-color: #fff;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+`
+
+const DescriptionTexte = styled.p`
+margin: 1em;
+overflow: hidden;
+display: -webkit-box;
+-webkit-line-clamp: 3; /* number of lines to show */
+        line-clamp: 3; 
+-webkit-box-orient: vertical;
+`
+
+const NavLinkStyle = styled(NavLink)`
+    padding: 8px;
+    align-self: flex-end;
 `
