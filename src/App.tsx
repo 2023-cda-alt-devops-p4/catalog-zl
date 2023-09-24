@@ -14,8 +14,10 @@ function App() {
     <Routes>
       <Route path='*' element={<NotFound />} />
       <Route path='/' element={<Home/>} />
-      <Route path='/uml' element={<Uml />} />
-      <Route path='/merise' element={<Merise/>} />
+      <Route path='/uml/' element={<Uml />} />
+      <Route path='/uml/:category/:name' element={<Uml />} />
+      <Route path='/merise/' element={<Merise/>} />
+      <Route path='/merise/:name' element={<Merise/>} />
     </Routes>
     </>
   );

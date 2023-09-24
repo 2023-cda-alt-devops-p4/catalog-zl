@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { FiChevronDown, FiChevronUp  } from "react-icons/fi";
 import { NavLink } from "react-router-dom";
 
-const Accordion = ({ data }) => {
+const Accordion = ({ category, data }) => {
     const [toggleAccordion, setToggleAccordion] = useState(undefined);
 
   return (
@@ -17,7 +17,7 @@ const Accordion = ({ data }) => {
                     </AccordionButton>
                     <AccordionContent  index={index} toggle={toggleAccordion}>
                         <DescriptionTexte>{item.description}</DescriptionTexte>
-                        <NavLinkStyle to={`/uml/${item.name}`}>En savoir plus</NavLinkStyle>
+                        <NavLinkStyle to={`/uml/${category}/${item.name}`}>En savoir plus</NavLinkStyle>
                     </AccordionContent>
                 </AccordionContainer>
             )

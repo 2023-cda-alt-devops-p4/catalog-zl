@@ -93,6 +93,7 @@ const QuitButtonContainer = styled.div`
 `
 
 const NavLinkStyle = styled(NavLink)`
+width: fit-content;
 color: #a1a1a1;
 text-decoration: none;
 margin: 2em 2em;
