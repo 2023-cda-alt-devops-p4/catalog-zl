@@ -16,12 +16,12 @@ function App() {
     <Routes>
       <Route path='*' element={<NotFound />} />
       <Route path='/' element={<Home/>} />
-      <Route path='/uml/' element={<Uml />} />
-      <Route path='/uml/:category/:name' element={<UmlDiagram />} />
-      <Route path='/uml/:category/' element={<UmlCategory />} />
+      <Route path='/UML/' element={<Uml />} />
+      <Route path='/UML/:category/:name' element={<UmlDiagram />} />
+      <Route path='/UML/:category/' element={<UmlCategory />} />
       <Route path='/merise/' element={<Merise/>} />
-      <Route path='/merise/:category/:name' element={<Merise/>} />
-      <Route path='/merise/:category/' element={<Merise/>} />
+      <Route path='/Merise/:category/:name' element={<Merise/>} />
+      <Route path='/Merise/:category/' element={<Merise/>} />
     </Routes>
     </>
   );

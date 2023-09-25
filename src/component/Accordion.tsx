@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import styled from "styled-components";
 import { FiChevronDown, FiChevronUp  } from "react-icons/fi";
 import { NavLink } from "react-router-dom";
@@ -17,7 +17,7 @@ const Accordion = ({ category, data }) => {
                     </AccordionButton>
                     <AccordionContent  index={index} toggle={toggleAccordion}>
                         <DescriptionTexte>{item.description}</DescriptionTexte>
-                        <NavLinkStyle to={`/uml/${category}/${item.name}`}>En savoir plus</NavLinkStyle>
+                        <NavLinkStyle to={`/UML/${category}/${item.name}`}>En savoir plus</NavLinkStyle>
                     </AccordionContent>
                 </AccordionContainer>
             )

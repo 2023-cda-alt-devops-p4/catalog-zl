@@ -21,23 +21,23 @@ const Navbar = () => {
         <NavLinkStyle 
           to={'/'} 
           className={({ isActive }) =>
-          isActive ? "navlink active" : "navlink"
+          isActive ? "active" : ""
         }>
           <FcHome size="2em" className="icon"/>
             <p>Home</p>
         </NavLinkStyle>
         <NavLinkStyle 
-          to={'/uml'} 
+          to={'/UML'} 
           className={({ isActive }) =>
-          isActive ? "navlink active" : "navlink"
+          isActive ? "active" : ""
         }>
           <FcParallelTasks size="2em"  className="icon"/>
             <p>UML</p>
         </NavLinkStyle>
         <NavLinkStyle 
-          to={'/merise'} 
+          to={'/Merise'} 
           className={({ isActive }) =>
-          isActive ? "navlink active" : "navlink"
+          isActive ? "active" : ""
         }>
           <FcServices size="2em" className="icon"/>
             <p>Merise</p>
