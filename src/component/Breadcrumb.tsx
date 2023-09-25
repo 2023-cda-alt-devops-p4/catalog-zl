@@ -1,12 +1,11 @@
-import React from 'react';
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
 const Breadcrumb = () => {
     const params = window.location.href.split("/").slice(5);
 
-    function generateLink(params, index) {
-      let array = [];
+    function generateLink(params:Array<string>, index:number) {
+      const array = [];
 
       for (let i = 0; i < index+1; i++) {
         array.push(params[i])

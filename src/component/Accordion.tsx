@@ -3,15 +3,17 @@ import styled from "styled-components";
 import { FiChevronDown, FiChevronUp  } from "react-icons/fi";
 import { NavLink } from "react-router-dom";
 
-const Accordion = ({ category, data }) => {
-    const [toggleAccordion, setToggleAccordion] = useState(undefined);
+
+
+const Accordion = ({ category, data } : { category: string | undefined, data: { name: string; description: string; elements: string[]; }[] }) => {
+    const [toggleAccordion, setToggleAccordion] = useState<number | undefined>(undefined);
 
   return (
     <div>
-        {data.map((item, index) => {
+        {data.map((item: { name: string; description: string; elements: string[]; } , index: number) => {
             return (
                 <AccordionContainer key={index}>
-                    <AccordionButton toggle={toggleAccordion} onClick={() => index === toggleAccordion ? setToggleAccordion(undefined) : setToggleAccordion(index)}>
+                    <AccordionButton onClick={() => index === toggleAccordion ? setToggleAccordion(undefined) : setToggleAccordion(index)}>
                         <p>{item.name}</p> 
                         <span>{toggleAccordion === index ? <FiChevronUp size={"1.5em"} /> : <FiChevronDown size={"1.5em"}/>}</span>
                     </AccordionButton>
@@ -42,7 +44,7 @@ const AccordionButton = styled.div`
     transition: border 3s ease-in-out;
 `
 
-const AccordionContent = styled.div`
+const AccordionContent = styled.div<{ toggle: number | undefined; index: number }>`
     max-height: ${({ toggle, index }) => toggle !== index ? "0" : "999px"};
     opacity: ${({ toggle, index }) => toggle !== index ? "0" : "1"};
     transition: 

@@ -5,7 +5,7 @@ import { FcHome, FcParallelTasks, FcServices } from "react-icons/fc";
 import styled from "styled-components";
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState<boolean>(false)
 
   return (
     <>
@@ -49,7 +49,7 @@ const Navbar = () => {
 
 export default Navbar
 
-const NavbarContent = styled.nav`
+const NavbarContent = styled.nav<{ toggle: boolean }>`
 transform: translateX(${({ toggle }) => (toggle ? "0" : "-170px")});
 position: fixed;
 height: 100vh;
@@ -65,7 +65,7 @@ transition: transform 0.2s ease-in-out;
 }
 `
 
-const CollapseButton = styled.button`
+const CollapseButton = styled.button<{ toggle: boolean }>`
   visibility: ${({ toggle }) => (toggle ? "hidden" : "visible")};
   opacity: ${({ toggle }) => (toggle ? "0" : "1")};
   background :none;
@@ -77,7 +77,7 @@ const CollapseButton = styled.button`
   transition: visibility 0s, opacity 0.5s ease-in;
 `;
 
-const QuitButton = styled.button`
+const QuitButton = styled.button<{ toggle: boolean }>`
   visibility: ${({ toggle }) => (toggle ? "visible" : "hidden")}; 
   positon: absolute;
   margin-top: 20px;

@@ -6,12 +6,13 @@ import Breadcrumb from "../component/Breadcrumb";
 const UmlCategory = () => {
     const { category } = useParams();
     const umlByCategory = uml.category.find(item => item.categoryName === category);
+    const diagrammes = umlByCategory?.diagrammes || [];
 
     return (
         <div className="container">
             <Breadcrumb />
             <h1>{ category }</h1>
-            <Accordion category={category} data={umlByCategory?.diagrammes} />
+            <Accordion category={category} data={diagrammes} />
         </div>
     )
 }
