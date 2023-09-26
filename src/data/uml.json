@@ -1,70 +1,142 @@
 {
-    "category":[
+  "category": [
     {
-        "categoryName": "Diagrammes de structure",
-        "diagrammes": [
-            {
-                "name": "Diagramme de classe",
-                "description": "Représente la structure des classes, des attributs, des opérations et des relations entre les classes.",
-                "elements": [
-                    "classes",
-                    "attributes",
-                    "operations",
-                    "relations"
-                ]
-            },
-            {
-                "name": "Diagramme d'objet",
-                "description": "Montre des instances spécifiques de classes et leurs relations à un moment donné.",
-                "elements": [
-                    "classes",
-                    "attributes",
-                    "operations",
-                    "relations"
-                ]
-            }
-        ]
+      "categoryName": "Diagrammes de structure",
+      "diagrammes": [
+        {
+          "name": "Diagramme de classe",
+          "description": "Un diagramme de classe est un outil visuel de modélisation UML qui représente la structure statique d'un système logiciel. Ce diagramme capture les classes du système, leurs attributs, méthodes, et les relations entre elles. Chaque classe est représentée par un rectangle avec son nom, ses attributs, et ses opérations.",
+          "exempleImage": "/imgs/uml-class.png",
+          "elements": [
+            "Classes : Les classes sont les éléments de base du diagramme de classe. Elles représentent les entités, les objets ou les concepts du système que vous souhaitez modéliser. Chaque classe doit être clairement identifiée.",
+            "Attributs : Les attributs sont les propriétés ou les données associées à chaque classe. Ils définissent les caractéristiques de la classe. Chaque attribut doit avoir un nom et un type de données.",
+            "Méthodes : Les méthodes sont les opérations ou les fonctions associées à chaque classe. Elles définissent les actions que la classe peut effectuer. Chaque méthode doit avoir un nom, des paramètres (si nécessaire) et un type de retour.",
+            "Relations : Les relations entre les classes indiquent comment elles interagissent les unes avec les autres. Les types de relations courantes incluent l'association, l'agrégation, la composition, l'héritage et la dépendance.",
+            "Visibilité : La visibilité des attributs et des méthodes spécifie qui peut accéder à ces éléments. Les options courantes sont public, private, et protected.",
+            "Cardinalité : La cardinalité indique combien d'objets d'une classe peuvent être liés à des objets d'une autre classe. Elle précise le nombre minimum et maximum d'objets dans une relation.",
+            "Stéréotypes : Les stéréotypes permettent de personnaliser le sens d'une classe en lui attribuant des rôles spécifiques ou en la catégorisant.",
+            "Généralisation/Héritage : Lorsque des classes partagent des caractéristiques communes, l'héritage permet de modéliser cette relation parent/enfant. C'est essentiel pour la création de hiérarchies de classes.",
+            "Commentaires et Notes : Les commentaires et les notes peuvent être utilisés pour fournir des descriptions, des explications ou des informations supplémentaires sur les classes, les attributs, les méthodes, etc."
+          ]
+        },
+        {
+          "name": "Diagramme d'objet",
+          "description": "Un diagramme d'objet est la modélisation UML qui permet de représenter graphiquement la structure statique d'un système logiciel. Il illustre les détails concrets du système, il se concentre sur les instances d'objets, montrant comment les classes se concrétisent avec des attributs et des valeurs spécifiques à un moment donné. Chaque objet est représenté par un rectangle avec son nom, ses attributs, et leurs valeurs actuelles.",
+          "exempleImage": "/imgs/uml-object.png",
+          "elements": [
+            "Objets : Les objets sont les instances des classes que vous souhaitez représenter dans le diagramme d'objet. Chaque objet doit être clairement identifié et associé à une classe.",
+            "Classes : Les classes sont les modèles à partir desquels les objets sont créés. Elles définissent la structure et le comportement des objets. Chaque objet doit être lié à une classe.",
+            "Attributs : Les attributs sont les propriétés ou les données spécifiques à chaque objet. Ils sont définis par les classes et peuvent avoir des valeurs spécifiques pour chaque objet.",
+            "Relations : Les relations entre les objets indiquent comment ils interagissent les uns avec les autres. Les types de relations courantes incluent l'association, l'agrégation et la composition.",
+            "Liens : Les liens sont les connexions spécifiques entre les objets qui participent à une relation. Ils montrent comment les objets interagissent dans une instance particulière.",
+            "Visibilité : La visibilité des attributs et des méthodes d'une classe peut être spécifiée pour indiquer quelles informations sont accessibles à partir de l'extérieur de la classe.",
+            "Multiplicité : La multiplicité indique combien d'objets d'une classe peuvent être liés à des objets d'une autre classe. Elle précise le nombre minimum et maximum d'objets dans une relation.",
+            "États : Si nécessaire, les objets peuvent avoir des états qui décrivent leur comportement à un moment donné, ce qui est particulièrement utile dans les diagrammes d'états.",
+            "Opérations : Les opérations sont les actions que les objets peuvent effectuer. Elles sont définies par les classes et peuvent être associées à des objets dans le diagramme d'objet.",
+            "Notation : La notation spécifique aux objets, y compris les rectangles ou les ovales représentant les objets, les liens et les flèches pour indiquer les relations, est essentielle pour une représentation claire et compréhensible."
+          ]
+        },
+        {
+          "name": "Diagramme de Paquetage",
+          "description": "Le diagramme de paquetage  facilite l'organisation et la structuration de l'information. Il à un rôle central pour hiérarchiser et organiser efficacement les données. Il permet de regrouper des éléments du modèle, tels que des classes, des interfaces, des sous-paquets, dans des unités logiques appelées 'paquets'. Chaque paquet peut contenir différents éléments, créant une structure hiérarchique.",
+          "exempleImage": "/imgs/uml-package.png",
+          "elements": [
+            "Paquets : Les paquets sont les éléments de base du diagramme de paquetage. Ils représentent des regroupements logiques de classes, de sous-paquets ou d'autres éléments du modèle.",
+            "Classes et Interfaces : Les classes et les interfaces sont les éléments que vous regroupez dans des paquets. Elles définissent la structure et le comportement du système.",
+            "Dépendances entre les Paquets : Les dépendances entre les paquets indiquent comment ils sont liés les uns aux autres. Elles permettent de montrer les relations de dépendance entre les parties du modèle.",
+            "Diagrammes Internes : Vous pouvez inclure des diagrammes internes à l'intérieur des paquets pour montrer en détail la structure et les relations des classes et des interfaces à l'intérieur du paquet.",
+            "Relations entre Classes et Interfaces : Vous pouvez montrer les relations entre les classes et les interfaces à l'intérieur des paquets, telles que les associations, les généralisations, etc.",
+            "Visibilité : La visibilité des classes, des interfaces et des membres de paquet peut être spécifiée pour indiquer quelles parties du modèle sont accessibles depuis l'extérieur du paquet.",
+            "Stéréotypes et Étiquettes : Les stéréotypes peuvent être utilisés pour spécifier le rôle ou la catégorie d'un paquet, et les étiquettes peuvent fournir des descriptions ou des informations supplémentaires.",
+            "Annotations : Les annotations et les notes peuvent être utilisées pour fournir des descriptions ou des informations supplémentaires sur les paquets, les classes, les interfaces, etc."
+          ]
+        },
+        {
+          "name": "Diagramme de Structure Composite",
+          "description": "Le diagramme de structure composite permet de représenter la composition et les relations entre les éléments d'une structure complexe. Il est là pour expliquer la structure interne de composants ou d'objets. Ce diagramme permet de décomposer une entité complexe en parties plus petites, montrant comment elles sont connectées et met en évidence la hiérarchie et les relations entre les composants et les parties, et permet de créer des vues détaillées de la structure.",
+          "exempleImage": "/imgs/uml-composite-structure.png",
+          "elements": [
+            "Composants : Les composants sont les éléments de base du diagramme de structure composite. Ils représentent les parties ou les modules du système que vous souhaitez modéliser. Chaque composant doit être clairement identifié.",
+            "Interfaces : Les interfaces définissent les contrats que les composants doivent respecter. Elles spécifient les méthodes ou les services que les composants fournissent ou utilisent. Les interfaces sont essentielles pour comprendre comment les composants interagissent.",
+            "Dépendances : Les dépendances entre les composants indiquent comment ils interagissent les uns avec les autres. Les flèches de dépendance montrent la direction des interactions et sont cruciales pour représenter les relations entre les composants.",
+            "Connecteurs : Les connecteurs relient les ports des composants et spécifient comment les composants communiquent. Les connecteurs sont responsables de l'établissement des liaisons entre les composants, ce qui est essentiel pour montrer comment le système fonctionne dans son ensemble."
+          ]
+        },
+        {
+          "name": "Diagramme de Composant",
+          "description": "le diagramme de composant illustre les parties du logiciel, des contrôleurs intégrés, etc, qui feront partie d'un système. Un diagramme de composants à un niveau d’abstraction plus élevé qu’un Diagramme de Classes. D’habitude, un composant est mis en œuvre par une ou plusieurs classes (ou objets) à l’exécution. Ils sont des composantes, donc un composant peut éventuellement englober une grande partie d’un système.",
+          "exempleImage": "/imgs/uml-component.png",
+          "elements": [
+            "Composants : Les composants sont les éléments de base du diagramme de composant. Ils représentent les parties ou les modules du système que vous souhaitez modéliser. Chaque composant doit être clairement identifié.",
+            "Interfaces : Les interfaces définissent les contrats que les composants doivent respecter. Elles spécifient les méthodes ou les services que les composants fournissent ou utilisent. Les interfaces sont essentielles pour comprendre comment les composants interagissent.",
+            "Dépendances : Les dépendances entre les composants indiquent comment ils interagissent les uns avec les autres. Les flèches de dépendance montrent la direction des interactions et sont cruciales pour représenter les relations entre les composants.",
+            "Connecteurs : Les connecteurs relient les ports des composants et spécifient comment les composants communiquent. Les connecteurs sont responsables de l'établissement des liaisons entre les composants, ce qui est essentiel pour montrer comment le système fonctionne dans son ensemble."
+          ]
+        },
+        {
+          "name": "Diagramme de Déploiement",
+          "description": "Un diagramme de déploiement est un outil de modélisation qui représente la configuration matérielle d'un système logiciel. Il montre comment les composants logiciels sont déployés sur des serveurs physiques ou des nœuds réseau. Son utilité réside dans la visualisation claire de l'infrastructure sous-jacente, facilitant la planification du déploiement, l'optimisation des ressources, et la compréhension de l'architecture système.",
+          "exempleImage": "/imgs/uml-deployment.png",
+          "elements": [
+            "Nœuds : Les nœuds représentent les ressources matérielles ou logicielles, telles que des serveurs, des ordinateurs, des dispositifs, ou des environnements d'exécution. Ils sont les éléments de base du diagramme de déploiement.",
+            "Artéfacts : Les artéfacts sont les éléments logiciels qui sont déployés sur les nœuds. Ils représentent les fichiers exécutables, les bibliothèques, les configurations, etc.",
+            "Dépendances entre les Nœuds : Les dépendances entre les nœuds indiquent comment ils sont connectés ou comment ils interagissent les uns avec les autres. Elles permettent de montrer les relations de dépendance et de communication entre les nœuds.",
+            "Connecteurs de Communication : Les connecteurs de communication spécifient comment les artéfacts sont déployés sur les nœuds et comment ils communiquent entre eux. Les connecteurs de communication sont essentiels pour représenter le déploiement des composants logiciels.",
+            "Stéréotypes : Les stéréotypes permettent de personnaliser la signification des nœuds ou des artéfacts en leur attribuant des rôles spécifiques, tels que \"serveur d'application\" ou \"base de données.\"",
+            "Relations de Réseau : Si vous modélisez des systèmes répartis, vous pouvez inclure des relations de réseau pour représenter les connexions entre les nœuds à travers des canaux de communication.",
+            "Annotations : Les annotations et les notes peuvent être utilisées pour fournir des descriptions ou des informations supplémentaires sur les nœuds, les artéfacts, les dépendances, etc."
+          ]
+        },
+        {
+          "name": "Diagramme de Profil",
+          "description": "Un diagramme de profil est une extension d'un diagramme UML qui permet de personnaliser et d'adapter UML à des besoins spécifiques, tels que l'ajout de métadonnées ou de stéréotypes. Son utilité réside dans la personnalisation de la modélisation UML pour répondre à des besoins particuliers, améliorant ainsi la précision et la pertinence de la documentation ou de la représentation d'un système.",
+          "exempleImage": "/imgs/uml-profil.png",
+          "elements": [
+            "Stéréotypes : Les stéréotypes sont les éléments les plus importants d'un diagramme de profil. Ils permettent de définir de nouveaux concepts ou d'étendre les concepts UML existants pour un domaine particulier. Chaque stéréotype doit être clairement défini avec ses caractéristiques spécifiques.",
+            "Métaclasses : Les métaclasses sont des classes qui définissent la structure des stéréotypes. Elles spécifient quelles propriétés et quelles opérations peuvent être associées aux stéréotypes.",
+            "Extensions : Les extensions sont utilisées pour montrer comment les stéréotypes sont appliqués aux éléments UML existants. Elles indiquent quelles classes ou quels éléments peuvent être étendus par les stéréotypes.",
+            "Contraintes : Les contraintes sont utilisées pour spécifier des règles ou des invariants qui s'appliquent aux éléments modélisés avec les stéréotypes. Elles peuvent être formulées en langage naturel ou en langage de contrainte comme OCL (Object Constraint Language).",
+            "Associations : Les associations entre les stéréotypes, les métaclasses et les contraintes peuvent être utilisées pour montrer comment ces éléments sont liés les uns aux autres dans le profil.",
+            "Iconographie et Notation : La manière dont les stéréotypes sont représentés graphiquement dans les diagrammes UML est importante pour la compréhension. Cela peut inclure des icônes, des couleurs ou d'autres éléments visuels distinctifs.",
+            "Documentation : Une documentation claire et précise est essentielle pour expliquer l'utilisation des stéréotypes, des métaclasses et des contraintes dans le contexte du profil. Elle aide les modélisateurs à comprendre comment utiliser le profil de manière appropriée.",
+            "Exemples : L'inclusion d'exemples concrets montrant comment appliquer les stéréotypes et les contraintes aux éléments UML existants peut faciliter la compréhension et l'utilisation du profil."
+          ]
+        }
+      ]
     },
     {
-        "categoryName": "Diagrammes de comportement",
-        "diagrammes": [
-            {
-                "name": "Diagramme de cas d'utilisation",
-                "description": "Description diagramme de cas d'utilisation",
-                "elements": [
-                    "element 1",
-                    "element 2"
-                ]
-            },
-            {
-                "name": "Diagramme d'état-transitions",
-                "description": "Description diagramme d'état-transitions",
-                "elements": [
-                    "element 1",
-                    "element 2"
-                ]
-            }
-        ]
+      "categoryName": "Diagrammes de comportement",
+      "diagrammes": [
+        {
+          "name": "Diagramme de cas d'utilisation",
+          "description": "Description diagramme de cas d'utilisation",
+          "exempleImage": "",
+          "elements": ["element 1", "element 2"]
+        },
+        {
+          "name": "Diagramme d'état-transitions",
+          "description": "Description diagramme d'état-transitions",
+          "exempleImage": "",
+          "elements": ["element 1", "element 2"]
+        }
+      ]
     },
     {
-        "categoryName": "Diagrammes d'interaction ",
-        "diagrammes": [
-            {
-                "name": "Diagramme de communication",
-                "description": "Description diagramme de communication",
-                "elements": [
-                    "element 1",
-                    "element 2"
-                ]
-            },
-            {
-                "name": "Diagramme de vue d'ensemble de collaboration",
-                "description": "Description diagramme de vue d'ensemble de collaboration",
-                "elements": [
-                    "element 1",
-                    "element 2"
-                ]
-            }
-        ]
+      "categoryName": "Diagrammes d'interaction ",
+      "diagrammes": [
+        {
+          "name": "Diagramme de communication",
+          "description": "Description diagramme de communication",
+          "exempleImage": "",
+          "elements": ["element 1", "element 2"]
+        },
+        {
+          "name": "Diagramme de vue d'ensemble de collaboration",
+          "description": "Description diagramme de vue d'ensemble de collaboration",
+          "exempleImage": "",
+          "elements": ["element 1", "element 2"]
+        }
+      ]
     }
-]}
+  ]
+}
