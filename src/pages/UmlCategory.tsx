@@ -9,11 +9,13 @@ const UmlCategory = () => {
     const diagrammes = umlByCategory?.diagrammes || [];
 
     return (
-        <div className="container">
+        <>
             <Breadcrumb />
-            <h1>{ category }</h1>
-            <Accordion category={category} data={diagrammes} />
-        </div>
+            <div className="container">
+                <h1 className="title">{ category }</h1>
+                <Accordion category={category} data={diagrammes} />
+            </div>
+        </>
     )
 }
 
