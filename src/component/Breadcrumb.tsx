@@ -33,15 +33,18 @@ const Breadcrumb = () => {
 export default Breadcrumb
 
 const BreadcrumbContainer = styled.div`
-    border: 1px solid #a1a1a1;
-    border-radius: 0.5em;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+    font-size: 0.8em;
     padding: 1em;
+    padding-left: 8em;
     display: flex;
-    gap: 1em;
+    gap: 0.8em;
     align-self: flex-start;
 `
 
 const BreadcrumbLink = styled(NavLink)`
     text-decoration: none;
-    color: gray;
+    color: #b67332;
 `
