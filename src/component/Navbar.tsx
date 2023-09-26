@@ -9,13 +9,13 @@ const Navbar = () => {
 
   return (
     <>
-    <CollapseButton toggle={isOpen} onClick={() => setIsOpen(!isOpen)}>
-      <FiAlignLeft size="3em" color="white"/>
+    <CollapseButton $toggle={isOpen.toString()} onClick={() => setIsOpen(!isOpen)}>
+      <FiAlignLeft size="3em" color="#FFF"/>
     </CollapseButton>
-    <NavbarContent toggle={isOpen} onClick={() => setIsOpen(!isOpen)}>
+    <NavbarContent $toggle={isOpen.toString()} onClick={() => setIsOpen(!isOpen)}>
       <QuitButtonContainer>
-        <QuitButton toggle={isOpen} onClick={() => setIsOpen(!isOpen)}>
-          <FiX size="2.5em" color="white"/>
+        <QuitButton $toggle={isOpen.toString()} onClick={() => setIsOpen(!isOpen)}>
+          <FiX size="2.5em" color="#fff"/>
         </QuitButton>
       </QuitButtonContainer>
         <NavLinkStyle 
@@ -49,8 +49,8 @@ const Navbar = () => {
 
 export default Navbar
 
-const NavbarContent = styled.nav<{ toggle: boolean }>`
-transform: translateX(${({ toggle }) => (toggle ? "0" : "-170px")});
+const NavbarContent = styled.nav<{ $toggle: string }>`
+transform: translateX(${({ $toggle }) => ($toggle === "true" ? "0" : "-170px")});
 position: fixed;
 height: 100vh;
 width: 250px;
@@ -61,13 +61,13 @@ background-color: #333;
 transition: transform 0.2s ease-in-out;
 
 @media (max-width: 768px) {
-  transform: translateX(${({ toggle }) => (toggle ? "0" : "-250px")});
+  transform: translateX(${({ $toggle }) => ($toggle === "true" ? "0" : "-250px")});
 }
 `
 
-const CollapseButton = styled.button<{ toggle: boolean }>`
-  visibility: ${({ toggle }) => (toggle ? "hidden" : "visible")};
-  opacity: ${({ toggle }) => (toggle ? "0" : "1")};
+const CollapseButton = styled.button<{ $toggle: string }>`
+  visibility: ${({ $toggle }) => ($toggle === "true" ? "hidden" : "visible")};
+  opacity: ${({ $toggle }) => ($toggle === "true" ? "0" : "1")};
   background :none;
   border: none;
   position: absolute;
@@ -77,8 +77,8 @@ const CollapseButton = styled.button<{ toggle: boolean }>`
   transition: visibility 0s, opacity 0.5s ease-in;
 `;
 
-const QuitButton = styled.button<{ toggle: boolean }>`
-  visibility: ${({ toggle }) => (toggle ? "visible" : "hidden")}; 
+const QuitButton = styled.button<{ $toggle: string }>`
+  visibility: ${({ $toggle }) => ($toggle === "true" ? "visible" : "hidden")}; 
   positon: absolute;
   margin-top: 20px;
   margin-right: 20px;
