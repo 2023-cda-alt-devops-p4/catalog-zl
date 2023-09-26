@@ -9,7 +9,7 @@ const Accordion = ({ category, data } : { category: string | undefined, data: { 
     const [toggleAccordion, setToggleAccordion] = useState<number | undefined>(undefined);
 
   return (
-    <div>
+    <AccordionParent>
         {data.map((item: { name: string; description: string; elements: string[]; } , index: number) => {
             return (
                 <AccordionContainer key={index}>
@@ -24,15 +24,18 @@ const Accordion = ({ category, data } : { category: string | undefined, data: { 
                 </AccordionContainer>
             )
         })}
-    </div>
+    </AccordionParent>
   )
 }
 
 export default Accordion
 
+const AccordionParent = styled.div`
+padding: 1em;
+`
+
 const AccordionContainer = styled.div`
-width: 60vw;
-max-width: 600px;
+    
 `
 
 const AccordionButton = styled.div`
@@ -41,7 +44,6 @@ const AccordionButton = styled.div`
     justify-content: space-between;
     background-color: #333;
     padding: 1em;
-    transition: border 3s ease-in-out;
 `
 
 const AccordionContent = styled.div<{ toggle: number | undefined; index: number }>`
