@@ -1,9 +1,16 @@
-const Merise = () => {
-  return (
-    <div className="container">
-      <div>Merise</div>
-    </div>
-  )
-}
+import Breadcrumb from "../component/Breadcrumb";
 
-export default Merise
+const Merise = () => {
+  const isMerisePage = window.location.href.includes("Merise");
+
+  return (
+    <>
+      {isMerisePage ? <Breadcrumb /> : null}
+      <div className="container">
+        <div>Merise</div>
+      </div>
+    </>
+  );
+};
+
+export default Merise;
