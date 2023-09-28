@@ -1,0 +1,91 @@
+{
+  "category": [
+    {
+      "categoryName": "Modèles de communication",
+      "diagrammes": [
+        {
+          "name": "",
+          "description": "",
+          "exempleImage": "",
+          "elements": []
+        },
+        {
+          "name": "",
+          "description": "",
+          "exempleImage": "",
+          "elements": []
+        },
+        {
+          "name": "",
+          "description": "",
+          "exempleImage": "",
+          "elements": []
+        },
+        {
+          "name": "",
+          "description": "",
+          "exempleImage": "",
+          "elements": []
+        }
+      ]
+    },
+    {
+      "categoryName": "Modèles de données",
+      "diagrammes": [
+        {
+          "name": "",
+          "description": "",
+          "exempleImage": "",
+          "elements": []
+        },
+        {
+          "name": "",
+          "description": "",
+          "exempleImage": "",
+          "elements": []
+        },
+        {
+          "name": "",
+          "description": "",
+          "exempleImage": "",
+          "elements": []
+        },
+        {
+          "name": "",
+          "description": "",
+          "exempleImage": "",
+          "elements": []
+        }
+      ]
+    },
+    {
+      "categoryName": "Modèles de traitement",
+      "diagrammes": [
+        {
+          "name": "",
+          "description": "",
+          "exempleImage": "",
+          "elements": []
+        },
+        {
+          "name": "",
+          "description": "",
+          "exempleImage": "",
+          "elements": []
+        },
+        {
+          "name": "",
+          "description": "",
+          "exempleImage": "",
+          "elements": []
+        },
+        {
+          "name": "",
+          "description": "",
+          "exempleImage": "",
+          "elements": []
+        }
+      ]
+    }
+  ]
+}
