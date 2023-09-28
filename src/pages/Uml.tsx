@@ -13,6 +13,16 @@ const Uml = () => {
       <h1 className="title">
         Liste des differents diagrammes UML classé par catégorie
       </h1>
+      <p className="description">
+        Les diagrammes UML (Unified Modeling Language) sont comme des cartes
+        visuelles pour les développeurs de logiciels. Ils permettent de
+        représenter graphiquement la structure, le comportement et les
+        interactions des systèmes informatiques. Ces diagrammes jouent un rôle
+        crucial en simplifiant la conception, la communication et la
+        documentation des projets de développement. Explorez ci-dessous la
+        variété de ces diagrammes et découvrez comment ils contribuent à la
+        création de logiciels robustes et bien conçus."
+      </p>
       {uml.category.map((item, index) => {
         return (
           <>
