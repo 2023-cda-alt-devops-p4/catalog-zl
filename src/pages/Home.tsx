@@ -1,14 +1,13 @@
-import Merise from "./Merise"
-import Uml from "./Uml"
+import Merise from "./Merise";
+import Uml from "./Uml";
 
 const Home = () => {
-
   return (
     <>
       <Uml />
       <Merise />
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

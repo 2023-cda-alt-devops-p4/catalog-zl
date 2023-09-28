@@ -20,32 +20,30 @@ const UmlDiagram = () => {
   );
 
   return (
-    <>
+    <div className="container">
       <Breadcrumb />
-      <div className="container">
-        <h1 className="title">{category}</h1>
-        <h3 className="subtitle">{name}</h3>
-        <p className="description">{diagram?.description}</p>
-        <ExempleContainer>
-          <h3 className="subtitle">Exemple :</h3>
-          <ExemplePicture src={diagram?.exempleImage} alt="" />
-          <h3 className="subtitle">Éléments :</h3>
-          <div>
-            {diagram?.elements.map((item: string) => {
-              return (
-                <>
-                  <Elements key={crypto.randomUUID()}>
-                    <span className="bold">{item.split(":")[0]} :</span>
-                    {item.split(":")[1]}
-                  </Elements>
-                  <br />
-                </>
-              );
-            })}
-          </div>
-        </ExempleContainer>
-      </div>
-    </>
+      <h1 className="title">{category}</h1>
+      <h3 className="subtitle">{name}</h3>
+      <p className="description">{diagram?.description}</p>
+      <ExempleContainer>
+        <h3 className="subtitle">Exemple :</h3>
+        <ExemplePicture src={diagram?.exempleImage} alt="" />
+        <h3 className="subtitle">Éléments :</h3>
+        <div>
+          {diagram?.elements.map((item: string) => {
+            return (
+              <>
+                <Elements key={crypto.randomUUID()}>
+                  <span className="bold">{item.split(":")[0]} :</span>
+                  {item.split(":")[1]}
+                </Elements>
+                <br />
+              </>
+            );
+          })}
+        </div>
+      </ExempleContainer>
+    </div>
   );
 };
 

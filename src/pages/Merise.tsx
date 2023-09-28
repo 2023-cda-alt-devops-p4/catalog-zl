@@ -4,12 +4,10 @@ const Merise = () => {
   const isMerisePage = window.location.href.includes("Merise");
 
   return (
-    <>
+    <div className="container">
       {isMerisePage ? <Breadcrumb /> : null}
-      <div className="container">
-        <div>Merise</div>
-      </div>
-    </>
+      <div>Merise</div>
+    </div>
   );
 };
 
