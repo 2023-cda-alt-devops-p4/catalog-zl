@@ -29,7 +29,10 @@ const Merise = () => {
           solutions mises en œuvre. Explorez ci-dessous les différents modèles
           Merise et leur rôle dans le développement de solutions informatiques.
         </p>
-        <img src="./imgs/merise.png" alt="" />
+        <img
+          src={import.meta.env.VITE_PUBLIC_URL + "/imgs/merise.png"}
+          alt=""
+        />
       </div>
       {merise.category.map((item, index) => {
         return (
