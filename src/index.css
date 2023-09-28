@@ -137,3 +137,7 @@ body {
     text-align: justify;
     padding: 1em 0;
 }
+
+.bold {
+    font-weight: bold;
+}
