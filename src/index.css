@@ -149,3 +149,18 @@ body {
 .bold {
     font-weight: bold;
 }
+
+.presentation {
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.presentation>img {
+    height: 250px;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+}
