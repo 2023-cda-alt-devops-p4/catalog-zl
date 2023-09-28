@@ -25,12 +25,10 @@ body {
     max-width: 900px;
     margin: 45px auto;
     outline: 18px solid rgba(255, 255, 255, 0.2);
-    padding: 1.8em;
+    padding: 2.5em;
     background-color: #E5E7E6;
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
 }
-
-
 
 /* Bannière */
 
