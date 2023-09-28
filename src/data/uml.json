@@ -6,7 +6,7 @@
         {
           "name": "Diagramme de classe",
           "description": "Un diagramme de classe est un outil visuel de modélisation UML qui représente la structure statique d'un système logiciel. Ce diagramme capture les classes du système, leurs attributs, méthodes, et les relations entre elles. Chaque classe est représentée par un rectangle avec son nom, ses attributs, et ses opérations.",
-          "exempleImage": "/imgs/uml-class.png",
+          "exempleImage": "/assets/imgs/uml-class.png",
           "elements": [
             "Classes : Les classes sont les éléments de base du diagramme de classe. Elles représentent les entités, les objets ou les concepts du système que vous souhaitez modéliser. Chaque classe doit être clairement identifiée.",
             "Attributs : Les attributs sont les propriétés ou les données associées à chaque classe. Ils définissent les caractéristiques de la classe. Chaque attribut doit avoir un nom et un type de données.",
@@ -22,7 +22,7 @@
         {
           "name": "Diagramme d'objet",
           "description": "Un diagramme d'objet est la modélisation UML qui permet de représenter graphiquement la structure statique d'un système logiciel. Il illustre les détails concrets du système, il se concentre sur les instances d'objets, montrant comment les classes se concrétisent avec des attributs et des valeurs spécifiques à un moment donné. Chaque objet est représenté par un rectangle avec son nom, ses attributs, et leurs valeurs actuelles.",
-          "exempleImage": "/imgs/uml-object.png",
+          "exempleImage": "/assets/imgs/uml-object.png",
           "elements": [
             "Objets : Les objets sont les instances des classes que vous souhaitez représenter dans le diagramme d'objet. Chaque objet doit être clairement identifié et associé à une classe.",
             "Classes : Les classes sont les modèles à partir desquels les objets sont créés. Elles définissent la structure et le comportement des objets. Chaque objet doit être lié à une classe.",
@@ -39,7 +39,7 @@
         {
           "name": "Diagramme de Paquetage",
           "description": "Le diagramme de paquetage  facilite l'organisation et la structuration de l'information. Il à un rôle central pour hiérarchiser et organiser efficacement les données. Il permet de regrouper des éléments du modèle, tels que des classes, des interfaces, des sous-paquets, dans des unités logiques appelées 'paquets'. Chaque paquet peut contenir différents éléments, créant une structure hiérarchique.",
-          "exempleImage": "/imgs/uml-package.png",
+          "exempleImage": "/assets/imgs/uml-package.png",
           "elements": [
             "Paquets : Les paquets sont les éléments de base du diagramme de paquetage. Ils représentent des regroupements logiques de classes, de sous-paquets ou d'autres éléments du modèle.",
             "Classes et Interfaces : Les classes et les interfaces sont les éléments que vous regroupez dans des paquets. Elles définissent la structure et le comportement du système.",
@@ -54,7 +54,7 @@
         {
           "name": "Diagramme de Structure Composite",
           "description": "Le diagramme de structure composite permet de représenter la composition et les relations entre les éléments d'une structure complexe. Il est là pour expliquer la structure interne de composants ou d'objets. Ce diagramme permet de décomposer une entité complexe en parties plus petites, montrant comment elles sont connectées et met en évidence la hiérarchie et les relations entre les composants et les parties, et permet de créer des vues détaillées de la structure.",
-          "exempleImage": "/imgs/uml-composite-structure.png",
+          "exempleImage": "/assets/imgs/uml-composite-structure.png",
           "elements": [
             "Composants : Les composants sont les éléments de base du diagramme de structure composite. Ils représentent les parties ou les modules du système que vous souhaitez modéliser. Chaque composant doit être clairement identifié.",
             "Interfaces : Les interfaces définissent les contrats que les composants doivent respecter. Elles spécifient les méthodes ou les services que les composants fournissent ou utilisent. Les interfaces sont essentielles pour comprendre comment les composants interagissent.",
@@ -65,7 +65,7 @@
         {
           "name": "Diagramme de Composant",
           "description": "le diagramme de composant illustre les parties du logiciel, des contrôleurs intégrés, etc, qui feront partie d'un système. Un diagramme de composants à un niveau d’abstraction plus élevé qu’un Diagramme de Classes. D’habitude, un composant est mis en œuvre par une ou plusieurs classes (ou objets) à l’exécution. Ils sont des composantes, donc un composant peut éventuellement englober une grande partie d’un système.",
-          "exempleImage": "/imgs/uml-component.png",
+          "exempleImage": "/assets/imgs/uml-component.png",
           "elements": [
             "Composants : Les composants sont les éléments de base du diagramme de composant. Ils représentent les parties ou les modules du système que vous souhaitez modéliser. Chaque composant doit être clairement identifié.",
             "Interfaces : Les interfaces définissent les contrats que les composants doivent respecter. Elles spécifient les méthodes ou les services que les composants fournissent ou utilisent. Les interfaces sont essentielles pour comprendre comment les composants interagissent.",
@@ -76,7 +76,7 @@
         {
           "name": "Diagramme de Déploiement",
           "description": "Un diagramme de déploiement est un outil de modélisation qui représente la configuration matérielle d'un système logiciel. Il montre comment les composants logiciels sont déployés sur des serveurs physiques ou des nœuds réseau. Son utilité réside dans la visualisation claire de l'infrastructure sous-jacente, facilitant la planification du déploiement, l'optimisation des ressources, et la compréhension de l'architecture système.",
-          "exempleImage": "/imgs/uml-deployment.png",
+          "exempleImage": "/assets/imgs/uml-deployment.png",
           "elements": [
             "Nœuds : Les nœuds représentent les ressources matérielles ou logicielles, telles que des serveurs, des ordinateurs, des dispositifs, ou des environnements d'exécution. Ils sont les éléments de base du diagramme de déploiement.",
             "Artéfacts : Les artéfacts sont les éléments logiciels qui sont déployés sur les nœuds. Ils représentent les fichiers exécutables, les bibliothèques, les configurations, etc.",
@@ -90,7 +90,7 @@
         {
           "name": "Diagramme de Profil",
           "description": "Un diagramme de profil est une extension d'un diagramme UML qui permet de personnaliser et d'adapter UML à des besoins spécifiques, tels que l'ajout de métadonnées ou de stéréotypes. Son utilité réside dans la personnalisation de la modélisation UML pour répondre à des besoins particuliers, améliorant ainsi la précision et la pertinence de la documentation ou de la représentation d'un système.",
-          "exempleImage": "/imgs/uml-profil.png",
+          "exempleImage": "/assets/imgs/uml-profil.png",
           "elements": [
             "Stéréotypes : Les stéréotypes sont les éléments les plus importants d'un diagramme de profil. Ils permettent de définir de nouveaux concepts ou d'étendre les concepts UML existants pour un domaine particulier. Chaque stéréotype doit être clairement défini avec ses caractéristiques spécifiques.",
             "Métaclasses : Les métaclasses sont des classes qui définissent la structure des stéréotypes. Elles spécifient quelles propriétés et quelles opérations peuvent être associées aux stéréotypes.",
@@ -110,7 +110,7 @@
         {
           "name": "Diagramme de cas d'utilisation",
           "description": "Un diagramme de cas d'utilisation est un outil visuel utilisé en ingénierie logicielle pour représenter les interactions entre un système et ses acteurs externes. Il illustre comment les utilisateurs interagissent avec un système, identifiant les fonctionnalités accessibles et les relations entre elles. Cela aide à comprendre les besoins des utilisateurs et à concevoir un système centré sur leurs besoins.",
-          "exempleImage": "/imgs/uml-use-case.png",
+          "exempleImage": "/assets/imgs/uml-use-case.png",
           "elements": [
             "Acteurs : Les acteurs sont les entités externes qui interagissent avec le système. Ils peuvent être des utilisateurs humains, d'autres systèmes, des machines, etc. Les acteurs sont représentés sous forme de blocs ou d'icônes sur le diagramme.",
             "Cas d'utilisation : Les cas d'utilisation sont les actions ou les fonctionnalités spécifiques du système que les acteurs peuvent déclencher. Chaque cas d'utilisation est représenté par une ellipse (ou un ovale) et est nommé de manière descriptive pour indiquer l'action ou la fonctionnalité qu'il représente.",
@@ -126,7 +126,7 @@
         {
           "name": "Diagramme d'état-transitions",
           "description": "Un diagramme d'état-transitions est un outil visuel en ingénierie logicielle pour modéliser le comportement d'un objet ou d'un système en représentant ses états et les transitions entre eux. Il aide à comprendre comment un objet réagit aux stimuli et change d'état, facilitant ainsi la conception de logiciels robustes et fiables.",
-          "exempleImage": "/imgs/uml-state.png",
+          "exempleImage": "/assets/imgs/uml-state.png",
           "elements": [
             "États : Les états représentent les situations ou les conditions dans lesquelles un objet ou un système peut se trouver. Chaque état est représenté par un rectangle avec une étiquette descriptive qui indique le nom de l'état.",
             "Transitions : Les transitions sont les passages d'un état à un autre en réponse à un événement ou une condition spécifique. Les transitions sont généralement représentées par des flèches ou des lignes dirigées, avec des étiquettes pour spécifier les déclencheurs (événements) qui provoquent la transition.",
@@ -144,7 +144,7 @@
         {
           "name": "Diagramme d'activité",
           "description": "Un diagramme d'activité est un outil visuel qui représente le flux des activités et des actions au sein d'un processus, montrant les décisions, les synchronisations et les déroulements parallèles. Il est utilisé en ingénierie logicielle pour modéliser les processus métier, les algorithmes ou les flux de travail, aidant à la compréhension, la communication et l'optimisation des opérations.",
-          "exempleImage": "/imgs/uml-activity.png",
+          "exempleImage": "/assets/imgs/uml-activity.png",
           "elements": [
             "Nœuds d'activité : Les nœuds d'activité représentent les étapes ou les actions dans le processus. Chaque nœud d'activité est représenté par une forme rectangulaire avec une étiquette descriptive indiquant l'action à effectuer.",
             "Flux de contrôle : Les flèches ou les lignes dirigées entre les nœuds d'activité indiquent la séquence d'exécution, c'est-à-dire l'ordre dans lequel les activités sont exécutées. Les flux de contrôle sont essentiels pour montrer le déroulement du processus.",
@@ -168,7 +168,7 @@
         {
           "name": "Diagramme de communication",
           "description": "Un diagramme de communication est un outil visuel utilisé en ingénierie logicielle pour représenter les interactions entre les objets ou les composants d'un système logiciel. Il met en évidence les messages échangés entre eux, facilitant ainsi la compréhension des collaborations au sein du système. Cela aide les développeurs à concevoir et à documenter les interactions, améliorant ainsi la qualité et la maintenance du logiciel.",
-          "exempleImage": "/imgs/uml-communication.png",
+          "exempleImage": "/assets/imgs/uml-communication.png",
           "elements": [
             "Objets ou composants : Les objets ou composants représentent les entités dans le système qui interagissent les unes avec les autres. Chaque objet ou composant est généralement représenté par un rectangle avec son nom.",
             "Lignes de vie : Les lignes de vie sont des lignes verticales qui représentent la durée de vie d'un objet ou d'un composant pendant une interaction. Chaque objet ou composant a sa propre ligne de vie.",
@@ -183,7 +183,7 @@
         {
           "name": "Diagramme de vue d'ensemble de collaboration",
           "description": "Un diagramme de vue d'ensemble de collaboration est un outil visuel en ingénierie logicielle qui montre les relations et les interactions entre les objets ou les composants d'un système. Son utilité réside dans la représentation claire des collaborations, des messages échangés, et des rôles joués par chaque élément, facilitant ainsi la compréhension et la conception de systèmes logiciels complexes.",
-          "exempleImage": "/imgs/uml-overview.png",
+          "exempleImage": "/assets/imgs/uml-overview.png",
           "elements": [
             "Objets ou composants : Les objets ou composants représentent les entités dans le système qui interagissent les unes avec les autres. Chaque objet ou composant est généralement représenté par un rectangle avec son nom.",
             "Lignes de communication : Les lignes de communication sont des lignes pointillées ou solides qui indiquent les interactions entre les objets ou les composants. Les lignes de communication peuvent être bidirectionnelles ou unidirectionnelles en fonction du sens de la communication.",
@@ -198,7 +198,7 @@
         {
           "name": "Diagramme de séquence",
           "description": "Un diagramme de séquence est une représentation visuelle qui montre comment les objets ou les composants interagissent dans un système, en mettant en évidence l'ordre chronologique des messages échangés. Il est essentiel en ingénierie logicielle pour modéliser et comprendre le comportement des systèmes, facilitant ainsi la conception, la détection d'erreurs et l'optimisation.",
-          "exempleImage": "/imgs/uml-sequence.png",
+          "exempleImage": "/assets/imgs/uml-sequence.png",
           "elements": [
             "Acteurs : Les acteurs sont les entités externes qui interagissent avec le système. Ils sont généralement représentés par des blocs en haut du diagramme, avec une ligne de vie (lifeline) correspondante pour chaque acteur.",
             "Objets ou composants : Les objets ou les composants sont les entités internes du système qui participent aux interactions. Chaque objet ou composant est représenté par une ligne de vie (lifeline) verticale.",
@@ -216,7 +216,7 @@
         {
           "name": "Diagramme de timing",
           "description": "Un diagramme de séquence est une représentation visuelle qui montre comment les objets ou les composants interagissent dans un système, en mettant en évidence l'ordre chronologique des messages échangés. Il est essentiel en ingénierie logicielle pour modéliser et comprendre le comportement des systèmes, ce qui facilite la conception, la détection d'erreurs et l'optimisation.",
-          "exempleImage": "/imgs/uml-timing.png",
+          "exempleImage": "/assets/imgs/uml-timing.png",
           "elements": [
             "Lignes de vie (Lifelines) : Les lignes de vie représentent les entités (objets, composants, etc.) dans le système qui émettent ou reçoivent des signaux. Chaque ligne de vie est généralement représentée par une ligne verticale.",
             "Événements : Les événements sont des points dans le temps où quelque chose se produit, comme un signal émis, une action déclenchée, ou un changement d'état. Les événements sont généralement représentés par des marques sur les lignes de vie.",
