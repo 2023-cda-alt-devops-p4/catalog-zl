@@ -34,6 +34,7 @@ const Uml = () => {
               <h3>{item.categoryName}</h3>
             </NavLinkCategory>
             <Accordion
+              type={"UML"}
               key={index}
               category={item.categoryName}
               data={item.diagrammes}

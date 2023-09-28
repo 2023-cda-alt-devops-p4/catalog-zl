@@ -42,6 +42,7 @@ const Merise = () => {
               <h3>{item.categoryName}</h3>
             </NavLinkCategory>
             <Accordion
+              type={"Merise"}
               key={index}
               category={item.categoryName}
               data={item.diagrammes}

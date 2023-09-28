@@ -14,7 +14,7 @@ const MeriseCategory = () => {
     <div className="container">
       <Breadcrumb />
       <h1 className="title">{category}</h1>
-      <Accordion category={category} data={diagrammes} />
+      <Accordion type="Merise" category={category} data={diagrammes} />
     </div>
   );
 };
