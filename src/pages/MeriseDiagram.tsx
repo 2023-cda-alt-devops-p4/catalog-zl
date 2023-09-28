@@ -27,7 +27,10 @@ const MeriseDiagram = () => {
       <p className="description">{diagram?.description}</p>
       <ExempleContainer>
         <h3 className="subtitle">Exemple :</h3>
-        <ExemplePicture src={diagram?.exempleImage} alt="" />
+        <ExemplePicture
+          src={import.meta.env.VITE_PUBLIC_URL + diagram?.exempleImage}
+          alt=""
+        />
         <h3 className="subtitle">Éléments :</h3>
         <div>
           {diagram?.elements.map((item: string) => {
