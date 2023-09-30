@@ -5,7 +5,7 @@
       "diagrammes": [
         {
           "name": "Modèle conceptuel de données",
-          "description": "Un Model Conceptuel de Données (MCD) est une représentation abstraite des données d'un système sans tenir compte de leur implémentation technique. Il aide à comprendre la structure des données et leurs relations, facilitant ainsi la conception, la communication et la planification de bases de données.",
+          "description": "Un modèle Conceptuel de Données (MCD) est une représentation abstraite des données d'un système sans tenir compte de leur implémentation technique. Il aide à comprendre la structure des données et leurs relations, facilitant ainsi la conception, la communication et la planification de bases de données.",
           "exempleImage": "/imgs/mcd.png",
           "elements": [
             "Entités : Ce sont les objets ou concepts principaux que vous souhaitez représenter dans la base de données. Chaque entité est généralement associée à des attributs qui décrivent ses caractéristiques.",
@@ -17,10 +17,10 @@
         },
         {
           "name": "Modèle logique de données",
-          "description": "Un Model Logique de Données (MLD) est une représentation détaillée des données d'un système, spécifiant les tables, les champs et les relations. Il sert de base à la création de bases de données et facilite la gestion et la requête des données de manière efficace et structurée.",
+          "description": "Un modèle Logique de Données (MLD) est une représentation détaillée des données d'un système, spécifiant les tables, les champs et les relations. Il sert de base à la création de bases de données et facilite la gestion et la requête des données de manière efficace et structurée.",
           "exempleImage": "/imgs/mld.png",
           "elements": [
-            "Tables : Les tables sont utilisées pour représenter les entités du système. Chaque table correspond généralement à une entité du Model Conceptuel de Données (MCD). Chaque ligne de la table représente une occurrence de cette entité, et chaque colonne représente un attribut de cette entité.",
+            "Tables : Les tables sont utilisées pour représenter les entités du système. Chaque table correspond généralement à une entité du modèle Conceptuel de Données (MCD). Chaque ligne de la table représente une occurrence de cette entité, et chaque colonne représente un attribut de cette entité.",
             "Colonnes : Les colonnes d'une table représentent les attributs de l'entité associée. Chaque colonne a un nom, un type de données (comme texte, nombre, date, etc.) et peut avoir des contraintes (comme la clé primaire, la clé étrangère, etc.).",
             "Clés primaires : Une clé primaire est une ou plusieurs colonnes qui identifient de manière unique chaque enregistrement dans une table. Elle garantit l'intégrité des données et permet de rechercher efficacement des informations.",
             "Clés étrangères : Les clés étrangères sont des colonnes qui établissent des liens entre les tables. Elles définissent les relations entre les entités en reliant une table à une autre par le biais de valeurs qui correspondent à la clé primaire de l'autre table.",
@@ -30,10 +30,10 @@
         },
         {
           "name": "Modèle physique de données",
-          "description": "Un Model Physique de Données (MPD) représente la manière dont les données sont stockées réellement dans une base de données, incluant les types de données, les index, et la structure physique. Il est essentiel pour la mise en œuvre efficace et la gestion de bases de données, en assurant des performances optimales et une utilisation efficace des ressources matérielles.",
+          "description": "Un modèle Physique de Données (MPD) représente la manière dont les données sont stockées réellement dans une base de données, incluant les types de données, les index, et la structure physique. Il est essentiel pour la mise en œuvre efficace et la gestion de bases de données, en assurant des performances optimales et une utilisation efficace des ressources matérielles.",
           "exempleImage": "/imgs/mpd.png",
           "elements": [
-            "Tables : Tout comme dans le Model Logique de Données (MLD), les tables représentent les entités du système. Chaque table est spécifiée avec les noms de colonnes, les types de données, les contraintes, et les informations physiques spécifiques à la base de données.",
+            "Tables : Tout comme dans le modèle Logique de Données (MLD), les tables représentent les entités du système. Chaque table est spécifiée avec les noms de colonnes, les types de données, les contraintes, et les informations physiques spécifiques à la base de données.",
             "Colonnes : Les colonnes définissent les attributs de chaque table, précisant leur type de données (comme VARCHAR, INTEGER, DATE, etc.), leur taille, et d'autres propriétés spécifiques au système de gestion de bases de données (SGBD) utilisé.",
             "Clés primaires et contraintes d'intégrité : Les clés primaires et autres contraintes d'intégrité (clés étrangères, contraintes de vérification, etc.) sont spécifiées de manière précise, en tenant compte des exigences et des spécificités du SGBD.",
             "Index : Les index sont définis pour améliorer les performances de recherche et d'accès aux données. Les colonnes indexées et le type d'index utilisé sont précisés.",
@@ -41,64 +41,6 @@
             "Espace de stockage : Le MPD peut définir les caractéristiques du stockage physique des données, telles que les tablespaces, les fichiers de données, et les emplacements de stockage.",
             "Autres paramètres spécifiques au SGBD : Selon le SGBD utilisé (comme Oracle, SQL Server, MySQL, etc.), le MPD peut inclure des paramètres spécifiques tels que les procédures stockées, les déclencheurs (triggers), les vues, etc."
           ]
-        }
-      ]
-    },
-    {
-      "categoryName": "Modèles 2",
-      "diagrammes": [
-        {
-          "name": "",
-          "description": "",
-          "exempleImage": "",
-          "elements": []
-        },
-        {
-          "name": "",
-          "description": "",
-          "exempleImage": "",
-          "elements": []
-        },
-        {
-          "name": "",
-          "description": "",
-          "exempleImage": "",
-          "elements": []
-        },
-        {
-          "name": "",
-          "description": "",
-          "exempleImage": "",
-          "elements": []
-        }
-      ]
-    },
-    {
-      "categoryName": "Modèles 3",
-      "diagrammes": [
-        {
-          "name": "",
-          "description": "",
-          "exempleImage": "",
-          "elements": []
-        },
-        {
-          "name": "",
-          "description": "",
-          "exempleImage": "",
-          "elements": []
-        },
-        {
-          "name": "",
-          "description": "",
-          "exempleImage": "",
-          "elements": []
-        },
-        {
-          "name": "",
-          "description": "",
-          "exempleImage": "",
-          "elements": []
         }
       ]
     }
