@@ -32,7 +32,7 @@ const MeriseDiagram = () => {
           alt=""
         />
         <h3 className="subtitle">Éléments :</h3>
-        <div>
+        <ul>
           {diagram?.elements.map((item: string) => {
             return (
               <>
@@ -44,7 +44,7 @@ const MeriseDiagram = () => {
               </>
             );
           })}
-        </div>
+        </ul>
       </ExempleContainer>
     </div>
   );
